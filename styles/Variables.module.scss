@@ -1,0 +1,49 @@
+$gray900: #18191f;
+$brand-font: "Manrope";
+$brand-primary-color: #8c30f5;
+$brand-accent-color: #75E3EA;
+$brand-compliment-color: #FFC278;
+$brand-purple-100: #f1e4ff;
+$brand-turqoise-800: #75e3ea;
+
+@mixin horizontal_padding {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@mixin medium_label {
+  font-family: $brand-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "liga" off;
+  color: #000000;
+}
+
+@mixin heading1 {
+  font-family: $brand-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 6.125rem;
+  margin: 0;
+}
+
+@mixin lead {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

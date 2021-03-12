@@ -1,0 +1,71 @@
+@import "Variables.module.scss";
+
+.hero_container {
+  @include wrapper;
+  min-height: 866px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.circle_purple {
+  fill: $brand-primary-color;
+  position: absolute;
+  top: -100px;
+  right: -295px;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.circle_orange {
+  fill: $brand-compliment-color;
+  position: absolute;
+  z-index: -1;
+  right: 461px;
+  top: 433px;
+}
+
+.circle_green {
+  fill: $brand-accent-color;
+  position: absolute;
+  z-index: -1;
+  right: 161px;
+  top: 689px;
+}
+
+.hero_content {
+  display: flex;
+  @include horizontal_padding;
+}
+
+.hero_cta {
+  width: 540px;
+}
+
+.hero_image_container {
+  margin-left: 2.75rem;
+}
+
+.lead {
+  @include lead;
+}
+
+.cta {
+    all: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  background-color: $brand-primary-color;
+  border-radius: 8px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-feature-settings: 'liga' off;
+}

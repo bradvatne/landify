@@ -1,0 +1,38 @@
+@import "Variables.module.scss";
+
+.nav_wrapper {
+    @include wrapper;
+    @include horizontal_padding;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_links {
+  flex-basis: 33%;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
+}
+
+.menu_link_item {
+  @include medium_label;
+  margin-right: 2rem;
+}
+
+.nav_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+}
+
+.social_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.875rem;
+  flex-basis: 33%;
+}
