@@ -1,10 +1,10 @@
 import styles from "../styles/Hero.module.scss";
 import { Header, Brands } from "./";
 
-export default function Hero({ content, headerContent }) {
+export default function Hero({ heroContent, headerContent, brandsContent }) {
   return (
     <div className={styles.hero_container}>
-      <Header content={headerContent} />
+      <Header headerContent={headerContent} />
       <svg className={styles.circle_purple} height="740" width="740">
         <circle cx="370" cy="370" r="370" />
       </svg>
@@ -16,16 +16,19 @@ export default function Hero({ content, headerContent }) {
       </svg>
       <div className={styles.hero_content}>
         <div className={styles.hero_cta}>
-          <h1>Landing page UI kit</h1>
-          <p className={styles.lead}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-            in et, lectus sit lorem id integer.
-          </p>
-          <a href="#"><button className={styles.cta}>Get started</button></a>
+          <h1>{heroContent.heading}</h1>
+          <p className={styles.lead}>{heroContent.lead}</p>
+          <a href={heroContent.button.url}>
+            <button className={styles.cta}>{heroContent.button.label}</button>
+          </a>
         </div>
-        <img src="./images/hero_image.jpg" className={styles.hero_image} />
+        <img
+          src={heroContent.image.url}
+          alt={heroContent.image.alt}
+          className={styles.hero_image}
+        />
       </div>
-      <Brands content={content} />
+      <Brands brandsContent={brandsContent} />
     </div>
   );
 }
