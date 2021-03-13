@@ -6,9 +6,9 @@ export default function Header({ headerContent }) {
     <div className={s.nav_wrapper}>
       <nav className={s.nav}>
         <ul className={s.menu_links}>
-          {menu_links.map((item, index) => (
-            <li key={index} className={s.menu_link_item}>
-              <a href={item.url}>{item.label}</a>
+          {menu_links.map((link, index) => (
+            <li key={index} className={s.menu_link_link}>
+              <a href={link.url}>{link.label}</a>
             </li>
           ))}
         </ul>
@@ -16,9 +16,9 @@ export default function Header({ headerContent }) {
           <img alt={nav_logo.alt} src={nav_logo.image} />
         </a>
         <div className={s.social_links}>
-          {social_links.map((item, index) => (
-            <a href={item.url} key={index}>
-              <img alt={item.brand} src={item.icon} />
+          {social_links.map((link, index) => (
+            <a href={link.url} key={index}>
+              <img alt={link.brand} src={link.icon} />
             </a>
           ))}
         </div>

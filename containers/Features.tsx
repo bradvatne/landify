@@ -1,18 +1,19 @@
-import styles from "../styles/Features.module.scss";
+import s from "../styles/Features.module.scss";
 
 export default function Features({ featuresContent }) {
+  const { title, lead, features } = featuresContent;
   return (
-    <div className={styles.features_wrapper}>
-      <div className={styles.grid}>
-        <div className={styles.title_container}>
-          <h2 className={styles.title}>{featuresContent.title}</h2>
-          <p className={styles.lead}>{featuresContent.lead}</p>
+    <div className={s.features_wrapper}>
+      <div className={s.grid}>
+        <div className={s.title_container}>
+          <h2 className={s.title}>{title}</h2>
+          <p className={s.lead}>{lead}</p>
         </div>
-        {featuresContent.features.map((item, index) => (
-          <div className={styles.feature}>
-            <img src={item.icon} alt={item.title} />
-            <h3>{item.title}</h3>
-            <p>{item.lead}</p>
+        {features.map((feature, index) => (
+          <div className={s.feature} key={index}>
+            <img src={feature.icon} alt={feature.title} />
+            <h3>{feature.title}</h3>
+            <p>{feature.lead}</p>
           </div>
         ))}
       </div>
