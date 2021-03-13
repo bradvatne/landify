@@ -5,7 +5,6 @@ import featuresJSON from "../content/features.json";
 import reviewsJSON from "../content/reviews.json";
 import { Hero, Features, Reviews } from "../containers";
 
-const obj = {};
 export default function Home({
   heroContent,
   brandsContent,
@@ -27,6 +26,7 @@ export default function Home({
 }
 
 export function getStaticProps() {
+  //This is dummy data, normally you would get data from your CMS and convert it to JSON here
   let heroContent = heroJSON;
   let brandsContent = brandsJSON;
   let headerContent = headerJSON;
