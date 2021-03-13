@@ -2,6 +2,7 @@
 
 .hero_container {
   @include wrapper;
+  min-height: 866px;
   height: 100vh;
   position: relative;
   display: flex;

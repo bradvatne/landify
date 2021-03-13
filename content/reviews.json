@@ -1,5 +1,28 @@
 {
     "title": "Real Stories from Real Customers",
-    "lead": "Get inspired by these stories"
+    "lead": "Get inspired by these stories",
+    "reviews": {
+        "left" : {
+            "icon": "/images/brand_logos/hubspot.svg",
+            "alt": "Hubspot",
+            "review": "To quickly start my startup landing page design, I was looking for a landing page UI Kit. Landify is one of the best landing page UI kit I have come across. It’s so flexible, well organised and easily editable.",
+            "author": "Floyd Miles",
+            "author_details": "Vice President, HubSpot"
+        },
+        "right_top": {
+            "icon": "/images/brand_logos/airbnb.svg",
+            "alt": "AirBnb",
+            "review": "I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it.",
+            "author": "Jane Cooper",
+            "author_details": "CEO, AirBnb"
+        },
+        "right_bottom": {
+            "icon": "/images/brand_logos/walmart.svg",
+            "alt": "Walmart",
+            "review": "Landify saved our time in designing my company page.",
+            "author": "Kristin Watson",
+            "author_details": "Co-Founder, Walmart"
+        }
+    }
 
 }

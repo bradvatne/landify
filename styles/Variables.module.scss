@@ -65,3 +65,35 @@ $brand-turqoise-100: #d5fafc;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+@mixin subtitle1 {
+  /* Subtitle / Subtitle 1 */
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  font-feature-settings: "liga" off;
+
+  /* Text / Gray 900 */
+
+  color: #18191f;
+}
+
+@mixin lead2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  font-feature-settings: "liga" off;
+
+  /* Text / Gray 700 */
+
+  color: #969bab;
+}
