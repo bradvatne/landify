@@ -21,8 +21,9 @@ export default function Hero({ content, headerContent }) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
             in et, lectus sit lorem id integer.
           </p>
-          <button className={styles.cta}>Get started</button>
+          <a href="#"><button className={styles.cta}>Get started</button></a>
         </div>
+        <img src="./images/hero_image.jpg" className={styles.hero_image} />
       </div>
       <div/>
     </div>

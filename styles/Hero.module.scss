@@ -44,8 +44,12 @@
   width: 540px;
 }
 
-.hero_image_container {
-  margin-left: 2.75rem;
+.hero_image {
+  box-shadow: 48px 24px 48px rgba(24, 37, 56, 0.12);
+  border-radius: 8px;
+  transform: matrix3d(0.9306,-0.12,0.00,.0005,0.12,0.9306,0.00,0,0,0,1,0,70,-20,0,1);
+  transform-style: preserve-3d;
+  max-height: 518px;
 }
 
 .lead {
@@ -53,7 +57,7 @@
 }
 
 .cta {
-    all: none;
+  all: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2.6rem;
@@ -67,5 +71,10 @@
   outline: none;
   box-shadow: none;
   border: none;
-  font-feature-settings: 'liga' off;
+  font-feature-settings: "liga" off;
+  margin-top: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
