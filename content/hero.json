@@ -6,7 +6,7 @@
         "url": "#"
     },
     "image": {
-        "url": "./images/hero_image.jpg",
+        "url": "/images/hero_image.jpg",
         "alt": "Happy woman with laptop"
     }
 }

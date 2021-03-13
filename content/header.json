@@ -14,29 +14,29 @@
         }
     ],
     "nav_logo": {
-        "image": "./images/nav_logo.svg",
+        "image": "/images/nav_logo.svg",
         "alt": "Landify Logo"
     },
     "social_links" : [
         {
             "brand": "Instagram",
             "url": "#",
-            "icon": "./images/social_links/instagram.svg"
+            "icon": "/images/social_links/instagram.svg"
         },
         {
             "brand": "Dribble",
             "url": "#",
-            "icon": "./images/social_links/dribble.svg"
+            "icon": "/images/social_links/dribble.svg"
         },
         {
             "brand": "Twitter",
             "url": "#",
-            "icon": "./images/social_links/twitter.svg"
+            "icon": "/images/social_links/twitter.svg"
         },
         {
             "brand": "Youtube",
             "url": "#",
-            "icon": "./images/social_links/youtube.svg"
+            "icon": "/images/social_links/youtube.svg"
         }
     ]
 }
