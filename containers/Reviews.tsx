@@ -1,54 +1,54 @@
-import styles from "../styles/Reviews.module.scss";
+import s from "../styles/Reviews.module.scss";
 
 export default function Reviews({ reviewsContent }) {
-  const review = reviewsContent.reviews;
+  const { title, lead, reviews } = reviewsContent;
   return (
-    <div className={styles.section}>
-      <div className={styles.wrapper}>
-        <img src={"/images/quote.svg"} className={styles.quotes_large} />
-        <div className={styles.left}>
-          <h2 className={styles.title}>{reviewsContent.title}</h2>
-          <p className={styles.lead}>{reviewsContent.lead}</p>
-          <div className={styles.review_left}>
+    <div className={s.section}>
+      <div className={s.wrapper}>
+        <img src={"/images/quote.svg"} className={s.quotes_large} />
+        <div className={s.left}>
+          <h2 className={s.title}>{title}</h2>
+          <p className={s.lead}>{lead}</p>
+          <div className={s.review_left}>
             <img
-              src={review.left.icon}
-              alt={review.left.alt}
-              className={styles.brand}
+              src={reviews.left.icon}
+              alt={reviews.left.alt}
+              className={s.brand}
             />
 
-            <img src={"/images/quote.svg"} className={styles.quotes_small} />
-            <p className={styles.review_text}>{review.left.review}</p>
-            <p className={styles.review_author}>{review.left.author}</p>
-            <p className={styles.review_author_details}>
-              {review.left.author_details}
+            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <p className={s.review_text}>{reviews.left.review}</p>
+            <p className={s.review_author}>{reviews.left.author}</p>
+            <p className={s.review_author_details}>
+              {reviews.left.author_details}
             </p>
           </div>
         </div>
-        <div className={styles.right}>
-          <div className={styles.right_top_review}>
+        <div className={s.right}>
+          <div className={s.right_top_review}>
             <img
-              src={review.right_top.icon}
-              alt={review.right_top.alt}
-              className={styles.brand}
+              src={reviews.right_top.icon}
+              alt={reviews.right_top.alt}
+              className={s.brand}
             />
-            <img src={"/images/quote.svg"} className={styles.quotes_small} />
-            <p className={styles.review_text}>{review.right_top.review}</p>
-            <p className={styles.review_author}>{review.right_top.author}</p>
-            <p className={styles.review_author_details}>
-              {review.right_top.author_details}
+            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <p className={s.review_text}>{reviews.right_top.review}</p>
+            <p className={s.review_author}>{reviews.right_top.author}</p>
+            <p className={s.review_author_details}>
+              {reviews.right_top.author_details}
             </p>
           </div>
-          <div className={styles.right_bottom_review}>
+          <div className={s.right_bottom_review}>
             <img
-              src={review.right_bottom.icon}
-              alt={review.right_bottom.alt}
-              className={styles.brand}
+              src={reviews.right_bottom.icon}
+              alt={reviews.right_bottom.alt}
+              className={s.brand}
             />
-            <img src={"/images/quote.svg"} className={styles.quotes_small} />
-            <p className={styles.review_text}>{review.right_bottom.review}</p>
-            <p className={styles.review_author}>{review.right_bottom.author}</p>
-            <p className={styles.review_author_details}>
-              {review.right_bottom.author_details}
+            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <p className={s.review_text}>{reviews.right_bottom.review}</p>
+            <p className={s.review_author}>{reviews.right_bottom.author}</p>
+            <p className={s.review_author_details}>
+              {reviews.right_bottom.author_details}
             </p>
           </div>
         </div>
