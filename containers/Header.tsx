@@ -7,7 +7,7 @@ export default function Header({ headerContent }) {
       <nav className={s.nav}>
         <ul className={s.menu_links}>
           {menu_links.map((link, index) => (
-            <li key={index} className={s.menu_link_link}>
+            <li key={index} className={s.menu_link_item}>
               <a href={link.url}>{link.label}</a>
             </li>
           ))}
