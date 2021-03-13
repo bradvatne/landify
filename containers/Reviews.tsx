@@ -1,6 +1,7 @@
 import s from "../styles/Reviews.module.scss";
+import { IReviews } from "../types";
 
-export default function Reviews({ reviewsContent }) {
+export default function Reviews({ reviewsContent }: IReviews) {
   const { title, lead, reviews } = reviewsContent;
   return (
     <div className={s.section}>

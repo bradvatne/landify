@@ -1,6 +1,7 @@
 import s from "../styles/Features.module.scss";
+import { IFeatures } from "../types";
 
-export default function Features({ featuresContent }) {
+export default function Features({ featuresContent }: IFeatures) {
   const { title, lead, features } = featuresContent;
   return (
     <div className={s.features_wrapper}>

@@ -1,6 +1,7 @@
 import s from "../styles/Nav.module.scss";
+import { IHeader } from "../types";
 
-export default function Header({ headerContent }) {
+export default function Header({ headerContent }: IHeader) {
   const { menu_links, nav_logo, social_links } = headerContent;
   return (
     <div className={s.nav_wrapper}>

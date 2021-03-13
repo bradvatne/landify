@@ -1,7 +1,8 @@
 import s from "../styles/Hero.module.scss";
+import { IHero} from "../types";
 import { Header, Brands } from "./";
 
-export default function Hero({ heroContent, headerContent, brandsContent }) {
+export default function Hero({ heroContent, headerContent, brandsContent }: IHero) {
   const { heading, lead, button, image } = heroContent;
   return (
     <div className={s.hero_container}>

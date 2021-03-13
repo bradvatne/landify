@@ -4,14 +4,22 @@ import brandsJSON from "../content/brands.json";
 import featuresJSON from "../content/features.json";
 import reviewsJSON from "../content/reviews.json";
 import { Hero, Features, Reviews } from "../containers";
+import {
+  IRequiredProps,
+  THero,
+  TBrands,
+  THeader,
+  TFeatures,
+  TReviews,
+} from "../types";
 
 export default function Home({
   heroContent,
   brandsContent,
   headerContent,
   featuresContent,
-  reviewsContent
-}) {
+  reviewsContent,
+}: IRequiredProps) {
   return (
     <>
       <Hero
@@ -27,11 +35,11 @@ export default function Home({
 
 export function getStaticProps() {
   //This is dummy data, normally you would get data from your CMS and convert it to JSON here
-  let heroContent = heroJSON;
-  let brandsContent = brandsJSON;
-  let headerContent = headerJSON;
-  let featuresContent = featuresJSON;
-  let reviewsContent = reviewsJSON;
+  let heroContent: THero = heroJSON;
+  let brandsContent: TBrands = brandsJSON;
+  let headerContent: THeader = headerJSON;
+  let featuresContent: TFeatures = featuresJSON;
+  let reviewsContent: TReviews = reviewsJSON;
 
   return {
     props: {
