@@ -1,15 +1,18 @@
-import Head from "next/head";
-import Header from "../containers/Header";
 import headerJSON from "../content/header.json";
 import heroJSON from "../content/hero.json";
 import brandsJSON from "../content/brands.json";
-import Hero from "../containers/Hero";
+import { Hero, Features } from "../containers";
 
 const obj = {};
-export default function Home({heroContent, brandsContent, headerContent}) {
+export default function Home({ heroContent, brandsContent, headerContent }) {
   return (
     <>
-      <Hero heroContent={heroContent} headerContent={headerContent} brandsContent={brandsContent} />
+      <Hero
+        heroContent={heroContent}
+        headerContent={headerContent}
+        brandsContent={brandsContent}
+      />
+      <Features />
     </>
   );
 }
@@ -23,7 +26,7 @@ export function getStaticProps() {
     props: {
       heroContent,
       brandsContent,
-      headerContent
-    }
-  }
+      headerContent,
+    },
+  };
 }

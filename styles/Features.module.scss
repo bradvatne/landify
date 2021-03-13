@@ -1,0 +1,7 @@
+@import 'Variables.module.scss';
+
+.features_wrapper {
+    @include wrapper;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
