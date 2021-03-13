@@ -1,0 +1,26 @@
+@import "./Variables.module.scss";
+
+.brand_logos_wrapper {
+  @include wrapper;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    rgb(192, 204, 218, 0.1),
+    rgb(192, 204, 218, 0.6),
+    rgb(192, 204, 218, 0.1)
+  );
+  margin-bottom: 1rem;
+}
+
+.brand_logos_container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

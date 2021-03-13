@@ -1,5 +1,5 @@
 import styles from "../styles/Hero.module.scss";
-import { Header } from "./";
+import { Header, Brands } from "./";
 
 export default function Hero({ content, headerContent }) {
   return (
@@ -25,7 +25,7 @@ export default function Hero({ content, headerContent }) {
         </div>
         <img src="./images/hero_image.jpg" className={styles.hero_image} />
       </div>
-      <div/>
+      <Brands content={content} />
     </div>
   );
 }

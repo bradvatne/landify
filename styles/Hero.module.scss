@@ -2,7 +2,7 @@
 
 .hero_container {
   @include wrapper;
-  min-height: 866px;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,6 @@
   border-radius: 8px;
   transform: matrix3d(0.9306,-0.12,0.00,.0005,0.12,0.9306,0.00,0,0,0,1,0,70,-20,0,1);
   transform-style: preserve-3d;
-  max-height: 518px;
 }
 
 .lead {

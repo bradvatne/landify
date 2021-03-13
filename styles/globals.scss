@@ -38,3 +38,7 @@ li {
 h1 {
   @include heading1
 }
+
+.wrapper {
+  @include wrapper;
+}
