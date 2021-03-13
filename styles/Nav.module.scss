@@ -1,9 +1,9 @@
 @import "Variables.module.scss";
 
 .nav_wrapper {
-    @include wrapper;
-    @include horizontal_padding;
-
+  @include wrapper;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav {

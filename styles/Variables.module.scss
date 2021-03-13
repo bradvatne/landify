@@ -5,6 +5,7 @@ $brand-accent-color: #75e3ea;
 $brand-compliment-color: #ffc278;
 $brand-purple-100: #f1e4ff;
 $brand-turqoise-800: #75e3ea;
+$brand-turqoise-100: #d5fafc;
 
 @mixin horizontal_padding {
   padding-left: 16px;
@@ -12,6 +13,7 @@ $brand-turqoise-800: #75e3ea;
 }
 
 @mixin wrapper {
+  @include horizontal_padding;
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
@@ -37,7 +39,7 @@ $brand-turqoise-800: #75e3ea;
 }
 
 @mixin heading2 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
   font-size: 3rem;
@@ -63,4 +65,3 @@ $brand-turqoise-800: #75e3ea;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-

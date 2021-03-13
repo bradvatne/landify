@@ -2,10 +2,17 @@ import headerJSON from "../content/header.json";
 import heroJSON from "../content/hero.json";
 import brandsJSON from "../content/brands.json";
 import featuresJSON from "../content/features.json";
-import { Hero, Features } from "../containers";
+import reviewsJSON from "../content/reviews.json";
+import { Hero, Features, Reviews } from "../containers";
 
 const obj = {};
-export default function Home({ heroContent, brandsContent, headerContent, featuresContent }) {
+export default function Home({
+  heroContent,
+  brandsContent,
+  headerContent,
+  featuresContent,
+  reviewsContent
+}) {
   return (
     <>
       <Hero
@@ -14,6 +21,7 @@ export default function Home({ heroContent, brandsContent, headerContent, featur
         brandsContent={brandsContent}
       />
       <Features featuresContent={featuresContent} />
+      <Reviews reviewsContent={reviewsContent} />
     </>
   );
 }
@@ -23,13 +31,15 @@ export function getStaticProps() {
   let brandsContent = brandsJSON;
   let headerContent = headerJSON;
   let featuresContent = featuresJSON;
+  let reviewsContent = reviewsJSON;
 
   return {
     props: {
       heroContent,
       brandsContent,
       headerContent,
-      featuresContent
+      featuresContent,
+      reviewsContent,
     },
   };
 }
