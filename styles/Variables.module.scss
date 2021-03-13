@@ -1,14 +1,14 @@
 $gray900: #18191f;
 $brand-font: "Manrope";
 $brand-primary-color: #8c30f5;
-$brand-accent-color: #75E3EA;
-$brand-compliment-color: #FFC278;
+$brand-accent-color: #75e3ea;
+$brand-compliment-color: #ffc278;
 $brand-purple-100: #f1e4ff;
 $brand-turqoise-800: #75e3ea;
 
 @mixin horizontal_padding {
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @mixin wrapper {
@@ -36,6 +36,22 @@ $brand-turqoise-800: #75e3ea;
   margin: 0;
 }
 
+@mixin heading2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  /* Text / Gray 900 */
+
+  color: #18191f;
+}
+
 @mixin lead {
   font-family: Manrope;
   font-style: normal;
@@ -47,3 +63,4 @@ $brand-turqoise-800: #75e3ea;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+

@@ -1,0 +1,36 @@
+{
+    "title": "Tailor-made features",
+    "lead": "Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.",
+    "features": [
+        {
+            "title": "Robust workflow",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/workflow.svg"
+        },
+        {
+            "title": "Flexibility",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/flexibility.svg"
+        },
+        {
+            "title": "User Friendly",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/userfriendly.svg"
+        },
+        {
+            "title": "Multiple Layouts",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/layouts.svg"
+        },
+        {
+            "title": "Better components",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/components.svg"
+        },
+        {
+            "title": "Well organized",
+            "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+            "icon": "/images/features_icons/organized.svg"
+        }
+    ]
+}
