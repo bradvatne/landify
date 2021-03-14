@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
-@import 'Variables.module.scss';
+@import "Variables.module.scss";
 
 html,
 body {
@@ -7,12 +7,16 @@ body {
   margin: 0;
   font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "liga" off;
 }
 
 body {
   overflow-x: hidden;
 }
-
 
 a {
   color: inherit;
@@ -36,7 +40,7 @@ li {
 }
 
 h1 {
-  @include heading1
+  @include heading1;
 }
 
 .wrapper {

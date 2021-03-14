@@ -8,11 +8,13 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to right,
-    rgb(192, 204, 218, 0.1),
+    rgb(192, 204, 218, 0),
     rgb(192, 204, 218, 0.6),
-    rgb(192, 204, 218, 0.1)
+    rgb(192, 204, 218, 0)
   );
   margin-bottom: 1rem;
+  border-left: none;
+  border-right: none;
 }
 
 .brand_logos_container {

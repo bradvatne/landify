@@ -54,6 +54,19 @@ $brand-turqoise-100: #d5fafc;
   color: #18191f;
 }
 
+@mixin heading4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "liga" off;
+
+  color: #000000;
+}
+
 @mixin lead {
   font-family: Manrope;
   font-style: normal;

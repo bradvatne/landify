@@ -1,0 +1,26 @@
+{
+    "title": "Our 18 years of achievements",
+    "lead": "With our super powers we have reached this",
+    "stats": [
+        {
+            "title": "10,000+",
+            "lead": "Downloads per day",
+            "icon": "/images/features_icons/workflow.svg"
+        },
+        {
+            "title": "2 Million",
+            "lead": "Users",
+            "icon": "/images/features_icons/layouts.svg"
+        },
+        {
+            "title": "500+",
+            "lead": "Clients",
+            "icon": "/images/features_icons/components.svg"
+        },
+        {
+            "title": "140",
+            "lead": "Countries",
+            "icon": "/images/features_icons/flexibility.svg"
+        }
+    ]
+}

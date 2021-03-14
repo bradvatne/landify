@@ -5,7 +5,8 @@ export type IRequiredProps = {
     brandsContent: TBrands,
     headerContent: THeader,
     featuresContent: TFeatures,
-    reviewsContent: TReviews
+    reviewsContent: TReviews,
+    statsContent: TStats
 }
 
 export interface IHero {
@@ -89,4 +90,8 @@ export type TReviews = {
         right_top: TReview,
         right_bottom: TReview
     }
+}
+
+export type TStats = {
+
 }
