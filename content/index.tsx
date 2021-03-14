@@ -5,6 +5,9 @@ import featuresJSON from "../content/features.json";
 import reviewsJSON from "../content/reviews.json";
 import statsJSON from "../content/stats.json";
 import featureLeftJSON from "../content/featureLeft.json";
+import featureCenterJSON from "../content/featureCenter.json";
+import ctaJSON from "../content/cta.json";
+import footerJSON from "../content/footer.json";
 
 export {
   headerJSON,
@@ -13,5 +16,8 @@ export {
   featuresJSON,
   reviewsJSON,
   statsJSON,
-  featureLeftJSON
+  featureLeftJSON,
+  featureCenterJSON,
+  ctaJSON,
+  footerJSON,
 };

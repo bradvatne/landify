@@ -4,7 +4,8 @@ $brand-primary-color: #8c30f5;
 $brand-accent-color: #75e3ea;
 $brand-compliment-color: #ffc278;
 $brand-purple-100: #f1e4ff;
-$brand-turqoise-800: #75e3ea;
+$brand-turqoise-800: #2EC5CE;
+
 $brand-turqoise-100: #d5fafc;
 
 @mixin horizontal_padding {
@@ -83,4 +84,11 @@ $brand-turqoise-100: #d5fafc;
   font-size: 18px;
   line-height: 28px;
   color: #18191f;
+}
+
+@mixin subtitle2{
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #18191F;
 }

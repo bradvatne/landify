@@ -6,8 +6,20 @@ import {
   reviewsJSON,
   statsJSON,
   featureLeftJSON,
+  featureCenterJSON,
+  ctaJSON,
+  footerJSON
 } from "../content/";
-import { Hero, Features, Reviews, Stats, FeatureLeft } from "../containers";
+import {
+  Hero,
+  Features,
+  Reviews,
+  Stats,
+  FeatureLeft,
+  FeatureCenter,
+  Cta,
+  Footer
+} from "../containers";
 import {
   IRequiredProps,
   THero,
@@ -17,6 +29,9 @@ import {
   TReviews,
   TStats,
   TFeatureLeft,
+  TFeatureCenter,
+  TCta,
+  TFooter
 } from "../types";
 
 export default function Home({
@@ -26,7 +41,10 @@ export default function Home({
   featuresContent,
   reviewsContent,
   statsContent,
-  featureLeftContent
+  featureLeftContent,
+  featureCenterContent,
+  ctaContent,
+  footerContent
 }: IRequiredProps) {
   return (
     <>
@@ -39,6 +57,9 @@ export default function Home({
       <Reviews reviewsContent={reviewsContent} />
       <Stats statsContent={statsContent} />
       <FeatureLeft featureLeftContent={featureLeftContent} />
+      <FeatureCenter featureCenterContent={featureCenterContent} />
+      <Cta ctaContent={ctaContent}/>
+      <Footer footerContent={footerContent}/>
     </>
   );
 }
@@ -52,6 +73,9 @@ export function getStaticProps() {
   let reviewsContent: TReviews = reviewsJSON;
   let statsContent: TStats = statsJSON;
   let featureLeftContent: TFeatureLeft = featureLeftJSON;
+  let featureCenterContent: TFeatureCenter = featureCenterJSON;
+  let ctaContent: TCta = ctaJSON;
+  let footerContent: TFooter = footerJSON;
 
   return {
     props: {
@@ -62,6 +86,9 @@ export function getStaticProps() {
       reviewsContent,
       statsContent,
       featureLeftContent,
+      featureCenterContent,
+      ctaContent,
+      footerContent
     },
   };
 }

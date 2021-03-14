@@ -1,0 +1,41 @@
+{
+    "logo": "/images/logo.svg",
+    "download": {
+        "link": "#",
+        "label": "Download Now"
+    },
+    "liscence": {
+        "link": "#",
+        "label": "Liscence"
+    },
+    "nav": [
+        {
+            "link": "#",
+            "label": "About"
+        },
+        {
+            "link": "#",
+            "label": "Features"
+        },
+        {
+            "link": "#",
+            "label": "Pricing"
+        },
+        {
+            "link": "#",
+            "label": "Careers"
+        },
+        {
+            "link": "#",
+            "label": "Help"
+        },
+        {
+            "link": "#",
+            "label": "Privacy Policy"
+        }
+    ],
+    "copyright": "© 2020 Landify UI Kit. All rights reserved. Designed by Arvvand Design. Coded by Brad Vatne.",
+    "cta": "Get the App",
+    "google": "#",
+    "apple": "#"
+}

@@ -1,5 +1,3 @@
-import { DH_UNABLE_TO_CHECK_GENERATOR } from "node:constants"
-
 export type IRequiredProps = {
     heroContent: THero,
     brandsContent: TBrands,
@@ -7,7 +5,10 @@ export type IRequiredProps = {
     featuresContent: TFeatures,
     reviewsContent: TReviews,
     statsContent: TStats
-    featureLeftContent: TFeatureLeft
+    featureLeftContent: TFeatureLeft,
+    featureCenterContent: TFeatureCenter,
+    ctaContent: TCta
+    footerContent: TFooter
 }
 
 export interface IHero {
@@ -98,5 +99,17 @@ export type TStats = {
 }
 
 export type TFeatureLeft = {
+
+}
+
+export type TFeatureCenter = {
+
+}
+
+export type TCta = {
+    
+}
+
+export type TFooter = {
 
 }

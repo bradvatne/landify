@@ -5,3 +5,6 @@ export { default as Features } from "./Features";
 export { default as Reviews } from "./Reviews";
 export { default as Stats } from "./Stats";
 export { default as FeatureLeft } from "./FeatureLeft";
+export { default as FeatureCenter } from "./FeatureCenter";
+export { default as Cta } from "./Cta";
+export { default as Footer } from "./Footer";

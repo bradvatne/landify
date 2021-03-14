@@ -1,0 +1,52 @@
+@import "./Variables.module.scss";
+
+.section {
+  background-color: $brand-turqoise-800;
+}
+.wrapper {
+  @include wrapper;
+  @include col2;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  @include heading2;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  @include lead;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.cta {
+  @include subtitle2;
+}
+
+.cta_buttons {
+  display: flex;
+}
+
+.left {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.right {
+    display: flex;
+
+}
+
+.phone_left {
+    align-self: start;
+    margin-left: 2.5rem;
+    margin-right: 2rem;
+}
+
+.phone_right {
+    align-self: flex-end;
+    
+}

@@ -1,0 +1,51 @@
+@import "./Variables.module.scss";
+
+.section {
+  background: #0b0d17;
+  color: white;
+}
+
+.wrapper {
+  @include wrapper;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+}
+
+.right {
+}
+
+.download {
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.download > a {
+  padding-right: 1.5rem;
+}
+.nav {
+  margin-bottom: 1.5rem;
+}
+
+.nav > a {
+  padding-right: 1.5rem;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+}
+
+.right > * {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.right > a {
+    font-size: 1.125rem;
+}
