@@ -2,11 +2,7 @@
 
 .wrapper {
     @include wrapper;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.875rem;
+    @include col2;
 }
 
 .title {

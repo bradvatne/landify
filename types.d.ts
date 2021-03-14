@@ -7,6 +7,7 @@ export type IRequiredProps = {
     featuresContent: TFeatures,
     reviewsContent: TReviews,
     statsContent: TStats
+    featureLeftContent: TFeatureLeft
 }
 
 export interface IHero {
@@ -93,5 +94,9 @@ export type TReviews = {
 }
 
 export type TStats = {
+
+}
+
+export type TFeatureLeft = {
 
 }

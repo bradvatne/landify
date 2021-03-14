@@ -1,0 +1,48 @@
+@import "./Variables.module.scss";
+
+.wrapper {
+  @include wrapper;
+  @include col2;
+}
+
+.left {
+  background-color: $brand-purple-100;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5rem;
+}
+
+.title {
+  @include heading3;
+  text-align: left;
+  margin: 0;
+}
+
+.lead {
+  @include lead;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.link {
+    margin: 0;
+    color: #8C30F5;
+    font-size: 	1.25rem;
+    line-height: 1.875rem;
+    display: flex;
+}
+
+.arrow {
+    margin-left: .5rem;
+
+}

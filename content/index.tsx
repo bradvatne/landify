@@ -4,6 +4,7 @@ import brandsJSON from "../content/brands.json";
 import featuresJSON from "../content/features.json";
 import reviewsJSON from "../content/reviews.json";
 import statsJSON from "../content/stats.json";
+import featureLeftJSON from "../content/featureLeft.json";
 
 export {
   headerJSON,
@@ -12,4 +13,5 @@ export {
   featuresJSON,
   reviewsJSON,
   statsJSON,
+  featureLeftJSON
 };
