@@ -1,6 +1,6 @@
 @import "Variables.module.scss";
 
-.hero_container {
+.wrapper {
   @include wrapper;
   min-height: 866px;
   height: 100vh;
@@ -9,6 +9,32 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+
+  p {
+    @include lead;
+  }
+
+  button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+    background-color: $brand-primary-color;
+    border-radius: 8px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-feature-settings: "liga" off;
+    margin-top: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .circle_purple {
@@ -36,44 +62,56 @@
   top: 689px;
 }
 
-.hero_content {
+.content {
   display: flex;
+  overflow: visible;
 }
 
-.hero_cta {
+.left {
   width: 540px;
 }
 
-.hero_image {
+.image_container {
+  transform: matrix3d(
+    0.9306,
+    -0.12,
+    0,
+    0.0005,
+    0.12,
+    0.9306,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    70,
+    -20,
+    0,
+    1
+  );
+  transform-style: preserve-3d;
+  width: 500px;
+}
+
+.image {
   box-shadow: 48px 24px 48px rgba(24, 37, 56, 0.12);
   border-radius: 8px;
-  transform: matrix3d(0.9306,-0.12,0.00,.0005,0.12,0.9306,0.00,0,0,0,1,0,70,-20,0,1);
-  transform-style: preserve-3d;
 }
 
-.lead {
-  @include lead;
-}
-
-.cta {
-  all: none;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2.6rem;
-  padding-right: 2.6rem;
-  background-color: $brand-primary-color;
-  border-radius: 8px;
-  color: white;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  outline: none;
-  box-shadow: none;
-  border: none;
-  font-feature-settings: "liga" off;
-  margin-top: 1rem;
-
-  &:hover {
-    cursor: pointer;
+@media (max-width: 780px) {
+  .image_container {
+    display: none;
   }
+  .left {
+    width: 490px
+  }
+
+  .circle_orange {
+    top: 533px;
+  }
+  .wrapper {
+    min-height: 100vh;
+  }
+
 }

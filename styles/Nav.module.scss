@@ -1,6 +1,6 @@
 @import "Variables.module.scss";
 
-.nav_wrapper {
+.wrapper {
   @include wrapper;
   padding-left: 0;
   padding-right: 0;
@@ -22,7 +22,7 @@
   margin-right: 2rem;
 }
 
-.nav_logo_container {
+.logo_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,4 +35,45 @@
   align-items: center;
   gap: 0.875rem;
   flex-basis: 33%;
+}
+
+.toggle_nav {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .menu_links {
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .menu_link_item {
+    display: block;
+    text-align: right;
+    margin-bottom: .5rem;
+  }
+
+  .menu_link_item_hide {
+
+  }
+
+  .social_links {
+    display: none;
+  }
+  .logo_container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+  }
+
+  .toggle_nav {
+    display: inline-block;
+    background-color: transparent !important;
+    padding: 0 !important;
+    width: 2rem;
+    margin: 0 !important;
+  }
 }
