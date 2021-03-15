@@ -19,16 +19,26 @@
 }
 
 .title {
-    @include heading2;
-    margin: 0;
+  @include heading2;
+  margin: 0;
 }
 
 .lead {
-    @include lead;
-    margin: 0;
-    margin-top: .5rem;
+  @include lead;
+  margin: 0;
+  margin-top: 0.5rem;
 }
 
 .feature {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .title_container {
+    grid-column: 1/3;
+  }
 }
