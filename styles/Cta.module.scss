@@ -50,3 +50,13 @@
     align-self: flex-end;
     
 }
+
+@media (max-width: 780px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    display: none;
+  }
+}

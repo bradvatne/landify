@@ -42,10 +42,28 @@
 }
 
 .right > * {
-    display: block;
-    padding-bottom: 1rem;
+  display: block;
+  padding-bottom: 1rem;
 }
 
 .right > a {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 780px) {
+  .right {
+    display: none;
+  }
+
+  .nav {
+    font-size: .8rem;
+  }
+
+  .copyright {
+    font-size: .6rem;
+  }
+
+  .left {
+    width: 100%;
+  }
 }

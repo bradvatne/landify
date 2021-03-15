@@ -32,3 +32,17 @@
     object-fit: scale-down;
 }
 
+@media (max-width: 780px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        padding-top: 2rem;
+    }
+    .image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .title{
+        text-align: center;
+    }
+}
