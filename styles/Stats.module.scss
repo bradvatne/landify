@@ -1,46 +1,63 @@
 @import "./Variables.module.scss";
 
 .wrapper {
-    @include wrapper;
-    @include col2;
+  @include wrapper;
+  @include col2;
 }
 
 .title {
-    @include heading2;
-    margin: 0;
-    text-align: left;
+  @include heading2;
+  margin: 0;
+  text-align: left;
 }
 
-.lead{
-    @include lead;
-    margin: 0;
+.lead {
+  @include lead;
+  margin: 0;
 }
 
 .right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2.5rem;
 }
 
 .stat {
-    display: flex;
+  display: flex;
 }
 
 .stat_title {
-    @include heading4;
-    margin: 0;
+  @include heading4;
+  margin: 0;
 }
 
 .stat_lead {
-    margin: 0;
+  margin: 0;
 }
 
 .icon {
-    width: 2em;
-    height: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 1.5rem;
-    margin-left: .5rem;
+  width: 2em;
+  height: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  .title,
+  .lead {
+  }
+
+  .lead {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
 }
