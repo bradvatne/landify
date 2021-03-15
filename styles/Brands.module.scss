@@ -1,28 +1,38 @@
 @import "./Variables.module.scss";
 
-.brand_logos_wrapper {
+.wrapper {
   @include wrapper;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border: 1px solid;
-  border-image-slice: 1;
   border-image-source: linear-gradient(
     to right,
-    rgb(192, 204, 218, 0),
-    rgb(192, 204, 218, 0.6),
-    rgb(192, 204, 218, 0)
+    rgba(192, 204, 218, 0),
+    rgba(192, 204, 218, 0.6),
+    rgba(192, 204, 218, 0)
   );
+  border-image-slice: 1;
+
   margin-bottom: 1rem;
   border-left: none;
   border-right: none;
 }
 
-.brand_logos_container {
+.container {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
   padding-left: 4rem;
   padding-right: 4rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 2rem;
+  }
 }
