@@ -37,8 +37,8 @@ $brand-turqoise-100: #d5fafc;
 
 @mixin heading1 {
   font-weight: 800;
-  font-size: clamp(2px, 16vw, 4.5rem);
-  line-height: clamp(4.5rem, 10vw, 98px);
+  font-size: 4.5rem;
+  line-height: 6.125rem;
   margin: 0;
 }
 

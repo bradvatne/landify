@@ -99,19 +99,36 @@
   border-radius: 8px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 943px) {
   .image_container {
     display: none;
   }
   .left {
-    width: 490px
+    width: 100%;
+    h1{
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  .circle_purple {
+    right: -200px;
+  }
+
+  .circle_green {
+    top: 60%;
+    right: 10%;
+    opacity: .5;
   }
 
   .circle_orange {
-    top: 533px;
+    top: 55%;
+    right: 70%;
+    opacity: .5;
   }
 
   .content {
     text-align: center;
   }
+
 }
