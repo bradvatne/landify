@@ -102,3 +102,33 @@
   grid-area: authordetails;
   margin: 0;
 }
+
+@media (max-width: 1000px) {
+  .left {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .review_left {
+    margin-left: 0;
+  }
+
+  .reviews_right_container {
+    margin-top: 0;
+  }
+
+  .right_bottom_review,
+  .right_top_review,
+  .left {
+    max-width: 100%;
+  }
+  .quotes_large {
+    right: 0;
+    transform: rotateY(180deg)
+  }
+}
