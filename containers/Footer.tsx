@@ -1,4 +1,5 @@
 import s from "../styles/Footer.module.scss";
+import Image from 'next/image';
 
 export default function Footer({ footerContent }) {
   const {
@@ -15,7 +16,7 @@ export default function Footer({ footerContent }) {
     <div className={s.section}>
       <div className={s.wrapper}>
         <div className={s.left}>
-          <img alt="Logo" src={logo} />
+          <Image width={32} height={32} alt="Landify Logo" src={logo} />
           <p className={s.download}>
             <a href={download.link}>{download.label}</a>
             <a href={liscence.link}>{liscence.label}</a>
@@ -30,12 +31,12 @@ export default function Footer({ footerContent }) {
           <p className={s.copyright}>{copyright}</p>
         </div>
         <div className={s.right}>
-          <a>{cta}</a>
+          <p>{cta}</p>
           <a href={google}>
-            <img alt="Google Play Store" src="/images/google_cta.svg" />
+            <Image width={135} height={40} alt="Google Play Store" src="/images/google_cta.svg" />
           </a>
           <a href={apple}>
-            <img alt="Apple App Store" src="/images/apple_cta.svg" />
+            <Image width={135} height={40} alt="Apple App Store" src="/images/apple_cta.svg" />
           </a>
         </div>
       </div>

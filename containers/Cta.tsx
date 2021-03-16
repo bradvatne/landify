@@ -16,20 +16,22 @@ export default function Cta({ ctaContent }) {
           </div>
         </div>
         <div className={s.right}>
-          <img
-            alt="Phone Preview"
+          <div className={s.phone_left}>
+          <Image
+            alt="Phone Mockup"
             width={232}
             height={371}
-            className={s.phone_left}
             src="/images/phone_left.png"
           />
-          <img
-            alt="Phone Preview"
+          </div>
+          <div className={s.phone_right}>
+          <Image
+            alt="Phone Mockup"
             width={232}
             height={403}
-            className={s.phone_right}
             src="/images/phone_right.png"
           />
+          </div>
         </div>
       </div>
     </div>
