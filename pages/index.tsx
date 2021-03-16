@@ -49,9 +49,35 @@ export default function Home({
 }: IRequiredProps) {
   return (
     <>
-    <Head>
-      <title>Landify</title>
-    </Head>
+      <Head>
+        <title>Landify</title>
+        <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+        <link rel="alternate icon" href="/images/logo.png" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01" />
+        <meta property="og:title" content="Landify UI Kit" />
+        <meta
+          property="og:description"
+          content="From Figma Mockup to Live Website"
+        />
+        <meta
+          property="og:image"
+          content="https://github.com/bradvatne/landify/blob/main/public/images/landify.png"
+        />
+        <meta
+          property="og:url"
+          content="https://landify-bradvatne.vercel.app/"
+        />
+        <meta name="twitter:title" content="Landify UI Kit " />
+        <meta
+          name="twitter:description"
+          content=" From Figma Mockup to Live Website"
+        />
+        <meta
+          name="twitter:image"
+          content=" https://github.com/bradvatne/landify/blob/main/public/images/landify.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <Hero
         heroContent={heroContent}
         headerContent={headerContent}
