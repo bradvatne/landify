@@ -32,10 +32,10 @@ export default function Footer({ footerContent }) {
         </div>
         <div className={s.right}>
           <p>{cta}</p>
-          <a href={google}>
+          <a href='#'>
             <Image width={135} height={40} alt="Google Play Store" src="/images/google_cta.svg" />
           </a>
-          <a href={apple}>
+          <a href='#'>
             <Image width={135} height={40} alt="Apple App Store" src="/images/apple_cta.svg" />
           </a>
         </div>
