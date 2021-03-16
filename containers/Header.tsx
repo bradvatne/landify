@@ -31,12 +31,12 @@ export default function Header({ headerContent }: IHeader) {
           ))}
         </ul>
         <a href="/" className={s.logo_container}>
-          <img alt={nav_logo.alt} src={nav_logo.image} />
+          <Image width={105} height={28} alt={nav_logo.alt} src={nav_logo.image} />
         </a>
         <div className={s.social_links}>
           {social_links.map((link, index) => (
             <a href={link.url} key={index}>
-              <img alt={link.brand} src={link.icon} />
+              <Image width={32} height={32} alt={link.brand} src={link.icon} />
             </a>
           ))}
         </div>

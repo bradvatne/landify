@@ -15,7 +15,7 @@ export default function Footer({ footerContent }) {
     <div className={s.section}>
       <div className={s.wrapper}>
         <div className={s.left}>
-          <img src={logo} />
+          <img alt="Logo" src={logo} />
           <p className={s.download}>
             <a href={download.link}>{download.label}</a>
             <a href={liscence.link}>{liscence.label}</a>
@@ -32,10 +32,10 @@ export default function Footer({ footerContent }) {
         <div className={s.right}>
           <a>{cta}</a>
           <a href={google}>
-            <img src="/images/google_cta.svg" />
+            <img alt="Google Play Store" src="/images/google_cta.svg" />
           </a>
           <a href={apple}>
-            <img src="/images/apple_cta.svg" />
+            <img alt="Apple App Store" src="/images/apple_cta.svg" />
           </a>
         </div>
       </div>

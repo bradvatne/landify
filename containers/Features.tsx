@@ -1,5 +1,6 @@
 import s from "../styles/Features.module.scss";
 import { IFeatures } from "../types";
+import Image from 'next/image';
 
 export default function Features({ featuresContent }: IFeatures) {
   const { title, lead, features } = featuresContent;
@@ -12,7 +13,7 @@ export default function Features({ featuresContent }: IFeatures) {
         </div>
         {features.map((feature, index) => (
           <div className={s.feature} key={index}>
-            <img src={feature.icon} alt={feature.title} />
+            <Image height={32} width={32} src={feature.icon} alt={feature.title} />
             <h3>{feature.title}</h3>
             <p>{feature.lead}</p>
           </div>

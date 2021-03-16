@@ -1,3 +1,4 @@
+import Head from "next/head";
 import {
   headerJSON,
   heroJSON,
@@ -8,7 +9,7 @@ import {
   featureLeftJSON,
   featureCenterJSON,
   ctaJSON,
-  footerJSON
+  footerJSON,
 } from "../content/";
 import {
   Hero,
@@ -18,7 +19,7 @@ import {
   FeatureLeft,
   FeatureCenter,
   Cta,
-  Footer
+  Footer,
 } from "../containers";
 import {
   IRequiredProps,
@@ -31,7 +32,7 @@ import {
   TFeatureLeft,
   TFeatureCenter,
   TCta,
-  TFooter
+  TFooter,
 } from "../types";
 
 export default function Home({
@@ -44,10 +45,13 @@ export default function Home({
   featureLeftContent,
   featureCenterContent,
   ctaContent,
-  footerContent
+  footerContent,
 }: IRequiredProps) {
   return (
     <>
+    <Head>
+      <title>Landify</title>
+    </Head>
       <Hero
         heroContent={heroContent}
         headerContent={headerContent}
@@ -58,8 +62,8 @@ export default function Home({
       <Stats statsContent={statsContent} />
       <FeatureLeft featureLeftContent={featureLeftContent} />
       <FeatureCenter featureCenterContent={featureCenterContent} />
-      <Cta ctaContent={ctaContent}/>
-      <Footer footerContent={footerContent}/>
+      <Cta ctaContent={ctaContent} />
+      <Footer footerContent={footerContent} />
     </>
   );
 }
@@ -88,7 +92,7 @@ export function getStaticProps() {
       featureLeftContent,
       featureCenterContent,
       ctaContent,
-      footerContent
+      footerContent,
     },
   };
 }

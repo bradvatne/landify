@@ -13,7 +13,7 @@ export default function Stats({ statsContent }) {
           <div key={index} className={s.stat}>
             <img className={s.icon} src={stat.icon} alt={stat.lead} />
             <div className={s.text}>
-              <h4 className={s.stat_title}>{stat.title}</h4>
+              <h3 className={s.stat_title}>{stat.title}</h3>
               <p className={s.stat_lead}>{stat.lead}</p>
             </div>
           </div>

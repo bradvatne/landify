@@ -6,7 +6,7 @@ export default function FeatureLeft({ featureLeftContent }) {
   return (
     <div className={s.wrapper}>
       <div className={s.left}>
-        <img src={image} />
+        <img alt="Phone Mockup" src={image} />
       </div>
       <div className={s.right}>
         <h3 className={s.title}>{title}</h3>

@@ -1,12 +1,13 @@
 import s from "../styles/Reviews.module.scss";
 import { IReviews } from "../types";
+import Image from 'next/image';
 
 export default function Reviews({ reviewsContent }: IReviews) {
   const { title, lead, reviews } = reviewsContent;
   return (
     <div className={s.section}>
       <div className={s.wrapper}>
-        <img src={"/images/quote.svg"} className={s.quotes_large} />
+        <img width={143} height={120} alt="Stylish Quotation Marks" src={"/images/quote.svg"} className={s.quotes_large} />
         <div className={s.left}>
           <h2 className={s.title}>{title}</h2>
           <p className={s.lead}>{lead}</p>
@@ -17,7 +18,7 @@ export default function Reviews({ reviewsContent }: IReviews) {
               className={s.brand}
             />
 
-            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <img alt="Stylish Quotation Marks" src={"/images/quote.svg"} className={s.quotes_small} />
             <p className={s.review_text}>{reviews.left.review}</p>
             <p className={s.review_author}>{reviews.left.author}</p>
             <p className={s.review_author_details}>
@@ -32,7 +33,7 @@ export default function Reviews({ reviewsContent }: IReviews) {
               alt={reviews.right_top.alt}
               className={s.brand}
             />
-            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <img alt="Stylish Quotation Marks" src={"/images/quote.svg"} className={s.quotes_small} />
             <p className={s.review_text}>{reviews.right_top.review}</p>
             <p className={s.review_author}>{reviews.right_top.author}</p>
             <p className={s.review_author_details}>
@@ -45,7 +46,7 @@ export default function Reviews({ reviewsContent }: IReviews) {
               alt={reviews.right_bottom.alt}
               className={s.brand}
             />
-            <img src={"/images/quote.svg"} className={s.quotes_small} />
+            <img alt="Stylish Quotation Marks" src={"/images/quote.svg"} className={s.quotes_small} />
             <p className={s.review_text}>{reviews.right_bottom.review}</p>
             <p className={s.review_author}>{reviews.right_bottom.author}</p>
             <p className={s.review_author_details}>

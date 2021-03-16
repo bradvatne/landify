@@ -13,6 +13,7 @@ export default function FeatureCenter({ featureCenterContent }) {
       </div>
       <div className={s.image}>
         <Image
+          alt="Stylish Lightbulbs"
           height={400}
           width={1000}
           layout="responsive"
