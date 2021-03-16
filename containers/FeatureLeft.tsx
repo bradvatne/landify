@@ -12,8 +12,10 @@ export default function FeatureLeft({ featureLeftContent }) {
       <div className={s.right}>
         <h3 className={s.title}>{title}</h3>
         <p className={s.lead}>{lead}</p>
-        <a className={s.link} href={a.url}>
-          {a.label}<img className={s.arrow} src='/images/right-arrow.svg'/>
+        <a href='#' className={s.link}>
+          <div className={s.arrow}>
+          {a.label}<Image width={24} height={30} alt="Arrow right" src='/images/right-arrow.svg'/>
+          </div>
         </a>
       </div>
     </div>

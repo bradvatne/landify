@@ -23,7 +23,7 @@ export default function Footer({ footerContent }) {
           </p>
           <div className={s.nav}>
             {nav.map((item, index) => (
-              <a key={index} href={item.link}>
+              <a href={item.link} key={index}>
                 {item.label}
               </a>
             ))}
