@@ -1,5 +1,6 @@
 import s from "../styles/Brands.module.scss";
 import { IBrands } from "../types";
+import Image from 'next/image'
 
 export default function Brands({ brandsContent }: IBrands) {
   return (
