@@ -1,18 +1,21 @@
 import { link } from "node:fs";
 import s from "../styles/FeatureLeft.module.scss";
+import Image from 'next/image';
 
 export default function FeatureLeft({ featureLeftContent }) {
   const { image, title, lead, a } = featureLeftContent;
   return (
     <div className={s.wrapper}>
       <div className={s.left}>
-        <img alt="Phone Mockup" src={image} />
+        <Image width={420} height={499} alt="Phone Mockup" src={image} />
       </div>
       <div className={s.right}>
         <h3 className={s.title}>{title}</h3>
         <p className={s.lead}>{lead}</p>
-        <a className={s.link} href={a.url}>
-          {a.label}<img className={s.arrow} src='/images/right-arrow.svg'/>
+        <a href='#' className={s.link}>
+          
+          {a.label}<div className={s.arrow}><Image width={24} height={30} alt="Arrow right" src='/images/right-arrow.svg'/>
+          </div>
         </a>
       </div>
     </div>

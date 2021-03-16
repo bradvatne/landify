@@ -1,4 +1,5 @@
 import s from "../styles/Stats.module.scss";
+import Image from "next/image";
 
 export default function Stats({ statsContent }) {
   const { title, lead, stats } = statsContent;
@@ -11,7 +12,9 @@ export default function Stats({ statsContent }) {
       <div className={s.right}>
         {stats.map((stat, index) => (
           <div key={index} className={s.stat}>
-            <img className={s.icon} src={stat.icon} alt={stat.lead} />
+            <div className={s.icon}>
+              <Image height={32} width={32} src={stat.icon} alt={stat.lead} />
+            </div>
             <div className={s.text}>
               <h3 className={s.stat_title}>{stat.title}</h3>
               <p className={s.stat_lead}>{stat.lead}</p>
