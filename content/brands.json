@@ -1,22 +1,32 @@
 [
     {
         "brand": "Airbnb",
-        "logo": "/images/brand_logos/airbnb.svg"
+        "logo": "/images/brand_logos/airbnb.svg",
+        "width": "91",
+        "height": "28"
     },
     {
         "brand": "Hubspot",
-        "logo": "/images/brand_logos/hubspot.svg"
+        "logo": "/images/brand_logos/hubspot.svg",
+        "width": "85",
+        "height": "28"
     },
     {
         "brand": "google",
-        "logo": "/images/brand_logos/google.svg"
+        "logo": "/images/brand_logos/google.svg",
+        "width": "85",
+        "height": "28"
     },
     {
         "brand": "Microsoft",
-        "logo": "/images/brand_logos/microsoft.svg"
+        "logo": "/images/brand_logos/microsoft.svg",
+        "width": "123",
+        "height": "28"
     },
     {
         "brand": "Walmart",
-        "logo": "/images/brand_logos/walmart.svg"
+        "logo": "/images/brand_logos/walmart.svg",
+        "width": "112",
+        "height": "28"
     }
 ]

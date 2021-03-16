@@ -46,7 +46,9 @@ export type THero = {
 export type TBrands = 
     {
         brand: string,
-        logo: string
+        logo: string,
+        width: string,
+        height: string
     }[]
 
 
